@@ -12,12 +12,23 @@ make image
 cd piko/docs/demo
 
 
+# set up certs for the first time
+docker-compose up -d load-balancer
+
 # run the certbot only once
-docker-compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ --dry-run -d piko.bouypay.com
-
-
 docker-compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ -d piko.bouypay.com
 
+# check the certs got created
+ls ./certbot/www
 
+
+
+
+
+```
+
+## Renew the certs (eventually make a cron job...)
+
+```bash
 
 ```
