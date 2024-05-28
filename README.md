@@ -16,7 +16,7 @@ cd piko/docs/demo
 docker-compose up -d load-balancer
 
 # run the certbot only once
-docker-compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ -d piko.bouypay.com -d lewis.piko.bouypay.com
+docker-compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ -d piko.bouypay.com -d lewis.piko.bouypay.com -d ieva.piko.bouypay.com
 
 # check the certs got created
 ls ./certbot/www
