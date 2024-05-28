@@ -16,4 +16,8 @@ cd piko/docs/demo
 docker-compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ --dry-run -d piko.bouypay.com
 
 
+docker-compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ -d piko.bouypay.com
+
+
+
 ```
